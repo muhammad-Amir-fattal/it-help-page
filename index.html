@@ -1,24 +1,149 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inazume IT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inazume IT</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+    }
+
+    .header {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .nav a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      background: #2563eb;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      background: #1d4ed8;
+    }
+
+    .section {
+      background: white;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+    .section {
+  background: white;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  transition: box-shadow 0.4s ease;
+}
+
+/* when section is clicked via anchor link */
+.section:target {
+  animation: rgbGlow 1.5s ease;
+}
+
+@keyframes rgbGlow {
+  0% {
+    box-shadow: 0 0 0px red;
+  }
+  25% {
+    box-shadow: 0 0 15px blue;
+  }
+  50% {
+    box-shadow: 0 0 20px lime;
+  }
+  75% {
+    box-shadow: 0 0 15px purple;
+  }
+  100% {
+    box-shadow: 0 0 0px transparent;
+  }
+}
+  </style>
+
 </head>
+
 <body>
+
   <div class="header">
     <h1>Welcome to Inazume IT Help Page</h1>
-    <h2>This IT Help Page is designed to assist you with common IT issues.</h2>
+    <p>This page helps you solve common IT issues before contacting IT.</p>
   </div>
-  <div class="content">
-    <h3>How to Use This Page?</h3>
-    <p>Use the navigation links to find help on specific topics.</p>
-    <a href="#vpn">VPN Issues</a>
-    <a href="#email">Email Issues</a>
-    <a href="#software">Software Installation</a>
-    <a href="#printer">Printer Issues</a>
 
+  <div class="content">
+
+<h3>How to Use This Page?</h3>
+<p>Select a category below:</p>
+
+<div class="nav">
+  <a href="#vpn">VPN Issues</a>
+  <a href="#new_laptop">New Laptop Setup</a>
+  <a href="#software">Software Installation</a>
+  <a href="#printer">Printer Issues</a>
+  <a href="#lateraddlinks">Contact IT by submitting a ticket request</a>
 </div>
+
+<div class="section" id="vpn">
+  <h2>VPN & Server Issues</h2>
+  <ul>
+    <li>Check internet connection</li>
+    <li>Check VPN client</li>
+    <li>Re-enter login credentials</li>
+    <li>How To implement VPN and Server for windows</li>
+    <li>Contact IT if issues persist</li>
+  </ul>
+</div>
+
+<div class="section" id="new_laptop">
+  <h2>Windows 11 Fresh install or new Laptop usage guide</h2>
+  <ul>
+    <li>How to Setup Windows after format or new laptop</li>
+    <li>How to login into Microsoft email</li>
+    
+    <li>Clear mailbox storage</li>
+  </ul>
+</div>
+
+<div class="section" id="software">
+  <h2>Software Installation</h2>
+  <ul>
+    <li>Microsoft Standard vs Microsoft Basic license</li>
+    <li>How to login into Microsoft email</li>
+    <li>How to install Microsoft 365</li>
+    <li>How to install autodesk autocad</li>
+    <li>Where & how can I get other software?</li>
+  </ul>
+</div>
+
+<div class="section" id="printer">
+  <h2>Printer Issues</h2>
+  <ul>
+    <li>Other than ricoh model Printers Guide</li>
+    <li>How To implement Scan folders with or without Inazume Server</li>
+    <li>How to Install Printer Drivers</li>
+  </ul>
+</div>
+
+
+  </div>
 
 </body>
 </html>
